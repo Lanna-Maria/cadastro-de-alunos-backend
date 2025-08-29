@@ -45,29 +45,33 @@ Ele segue o padrão **MVC** (Model-View-Controller) e fornece uma **API RESTful*
 
 ## Instalação e Configuração
 
-```bash
-1. Clone o repositório:
 
+1. Clone o repositório:
+```
 git clone https://github.com/Lanna-Maria/cadastro-de-alunos-backend.git
 cd cadastro-de-alunos-backend
+```
 
 2. Instale as dependências:
-
+```
 npm install
 
-3. Configure o arquivo .env com sua conexão do PostgreSQL:
+```
 
+3. Configure o arquivo .env com sua conexão do PostgreSQL:
+```
 DATABASE_URL="postgresql://usuario:senha@localhost:5432/cadastro_de_alunos"
+```
    
 4. Rode as migrações do Prisma:
-
+```
 npx prisma migrate dev --name init
-  
+  ```
+
 5. Inicie o servidor:
-
+```
 npx nodemon src/server.js
-
-
+```
 
 
 
