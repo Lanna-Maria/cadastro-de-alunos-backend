@@ -1,30 +1,30 @@
-# Cadastro de Alunos e Professores - Backend
+# 🏫 Cadastro de Alunos e Professores - Backend
 
-Este projeto é um **backend** desenvolvido em **Node.js**, **Express** e **PostgreSQL** utilizando o **Prisma ORM**.  
-Ele segue o padrão **MVC** (Model-View-Controller) e fornece uma **API RESTful** para gerenciar alunos e professores de uma escola.
-
----
-
-## Funcionalidades
-
-- Cadastro, listagem, atualização e exclusão de **alunos**  
-- Cadastro, listagem, atualização e exclusão de **professores**  
+Este projeto é uma atividade prática do Curso de Extensão **Capacita Brasil**, desenvolvida durante o módulo **Desenvolvimento Web Full Stack Avançado**, com foco em **backend** desenvolvido em **Node.js**, **Express** e **PostgreSQL** utilizando o **Prisma ORM**.  
+Segue o padrão **MVC** (Model-View-Controller) e fornece uma **API RESTful** para gerenciar alunos e professores de uma escola.
 
 ---
 
-## Tecnologias Utilizadas
+## ⚙️ Funcionalidades
 
-- Node.js  
-- Express  
-- PostgreSQL  
-- Prisma ORM  
-- Insomnia / Postman para testes  
+- 👩‍🎓 Cadastro, listagem, atualização e exclusão de **alunos**  
+- 👨‍🏫 Cadastro, listagem, atualização e exclusão de **professores**  
 
 ---
 
-## Estrutura do Projeto
+## 🛠️ Tecnologias Utilizadas
 
-```
+- 🟢 Node.js  
+- ⚡ Express  
+- 🐘 PostgreSQL  
+- 📦 Prisma ORM  
+- 📝 Insomnia / Postman para testes  
+
+---
+
+## 📁 Estrutura do Projeto
+
+```bash
 📁 cadastro-de-alunos-backend/
 ├── 📁 prisma/
 │   └── 📄 schema.prisma
