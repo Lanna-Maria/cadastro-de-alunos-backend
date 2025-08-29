@@ -26,20 +26,20 @@ Ele segue o padrão **MVC** (Model-View-Controller) e fornece uma **API RESTful*
 
 cadastro-de-alunos-backend/
 ├── prisma/
-│ └── schema.prisma
+│   └── schema.prisma
 ├── src/
-│ ├── controllers/
-│ │ ├── alunoController.js
-│ │ └── professorController.js
-│ ├── routes/
-│ │ ├── alunoRoutes.js
-│ │ └── professorRoutes.js
-│ └── server.js
+│   ├── controllers/
+│   │   ├── alunoController.js
+│   │   └── professorController.js
+│   ├── routes/
+│   │   ├── alunoRoutes.js
+│   │   └── professorRoutes.js
+│   └── server.js
 ├── .gitignore
 ├── .env
-├──
-package.json
+├── package.json
 └── README.md
+
 
 ## Instalação e Configuração
 
