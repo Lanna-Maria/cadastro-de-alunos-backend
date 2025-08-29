@@ -24,6 +24,7 @@ Ele segue o padrão **MVC** (Model-View-Controller) e fornece uma **API RESTful*
 
 ## Estrutura do Projeto
 
+```
 📁 cadastro-de-alunos-backend/
 ├── 📁 prisma/
 │   └── 📄 schema.prisma
@@ -39,6 +40,7 @@ Ele segue o padrão **MVC** (Model-View-Controller) e fornece uma **API RESTful*
 ├── 📄 .env
 ├── 📄 package.json
 └── 📄 README.md
+```
 
 
 ## Instalação e Configuração
