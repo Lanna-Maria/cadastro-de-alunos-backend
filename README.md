@@ -43,9 +43,9 @@ package.json
 
 ## Instalação e Configuração
 
+```bash
 1. Clone o repositório:
 
-```bash
 git clone https://github.com/Lanna-Maria/cadastro-de-alunos-backend.git
 cd cadastro-de-alunos-backend
 
