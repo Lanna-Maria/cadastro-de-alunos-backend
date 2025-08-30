@@ -7,8 +7,8 @@ exports.getProfessores = async (req, res) => {
 };
 
 exports.createProfessor = async (req, res) => {
+  const { nome, email, idade } = req.body;
   try {
-    const { nome, email, idade } = req.body;
     const professor = await prisma.professor.create({
       data: { nome, email, idade: parseInt(idade) },
     });
@@ -21,12 +21,12 @@ exports.createProfessor = async (req, res) => {
 };
 
 exports.updateProfessor = async (req, res) => {
+  const { id } = req.params;
+  const { nome, email, idade } = req.body;
   try {
-    const { id } = req.params;
-    const { nome, email } = req.body;
     const professor = await prisma.professor.update({
       where: { id: parseInt(id) },
-      data: { nome, email },
+      data: { nome, email, idade: parseInt(idade) },
     });
     res.json(professor);
   } catch (err) {
@@ -35,8 +35,8 @@ exports.updateProfessor = async (req, res) => {
 };
 
 exports.deleteProfessor = async (req, res) => {
+  const { id } = req.params;
   try {
-    const { id } = req.params;
     await prisma.professor.delete({ where: { id: parseInt(id) } });
     res.json({ message: 'Professor excluído com sucesso.' });
   } catch (err) {

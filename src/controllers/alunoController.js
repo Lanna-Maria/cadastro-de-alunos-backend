@@ -7,8 +7,8 @@ exports.getAlunos = async (req, res) => {
 };
 
 exports.createAluno = async (req, res) => {
+  const { nome, email, idade } = req.body;
   try {
-    const { nome, email, idade } = req.body;
     const aluno = await prisma.aluno.create({
       data: { nome, email, idade: parseInt(idade) },
     });
@@ -21,12 +21,12 @@ exports.createAluno = async (req, res) => {
 };
 
 exports.updateAluno = async (req, res) => {
+  const { id } = req.params;
+  const { nome, email, idade } = req.body;
   try {
-    const { id } = req.params;
-    const { nome, email } = req.body;
     const aluno = await prisma.aluno.update({
       where: { id: parseInt(id) },
-      data: { nome, email },
+      data: { nome, email, idade: parseInt(idade) },
     });
     res.json(aluno);
   } catch (err) {
@@ -35,8 +35,8 @@ exports.updateAluno = async (req, res) => {
 };
 
 exports.deleteAluno = async (req, res) => {
+  const { id } = req.params;
   try {
-    const { id } = req.params;
     await prisma.aluno.delete({ where: { id: parseInt(id) } });
     res.json({ message: 'Aluno excluído com sucesso.' });
   } catch (err) {
